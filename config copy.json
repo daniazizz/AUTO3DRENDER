@@ -1,0 +1,31 @@
+{
+  "_comments": {
+    "pattern": "Pattern image filename from /patterns/ folder (e.g., 'SENEGAL (3).png')",
+    "samples": "Render quality samples: 8, 16, 32, 64, 128, 256 (higher = better quality, slower render)",
+    "engine": "Render engine: 'CYCLES' (quality) or 'BLENDER_EEVEE_NEXT' (fast preview)",
+    "resolution_scale": "Resolution as percentage of base: 50, 75, or 100",
+    "output_width": "Output image width in pixels (default 480)",
+    "output_height": "Output image height in pixels (default 480)",
+    "threads_color": "Thread color as hex code: '#RRGGBB' (e.g., '#FF0000' for red, '#000000' for black)",
+    "cameras": "List of camera names to render. Empty list [] renders all cameras. Examples: ['Camera.001', 'Camera.002']",
+    "presets": "List of [camera, frame] pairs for preset rendering. Examples: [['Camera.001', 180], ['Camera.002', 240]]",
+    "output_dir": "Directory to save rendered images (relative to project root)",
+    "blend_file": "Blender file name (should be in the project root directory)"
+  },
+  "pattern": "SENEGAL (3).png",
+  "samples": 32,
+  "engine": "BLENDER_EEVEE_NEXT",
+  "resolution_scale": 50,
+  "output_width": 500,
+  "output_height": 500,
+  "threads_color": "#0000FF",
+  "cameras": ["1. Camera (close front)"],
+  "presets": [
+    ["1. Camera (close front)", 0],
+    ["1. Camera (close front)", 90],
+    ["2. Camera (details)", 0],
+    ["2. Camera (details)", 90]
+  ],
+  "output_dir": "output",
+  "blend_file": "Rashguard mockup.blend"
+}
